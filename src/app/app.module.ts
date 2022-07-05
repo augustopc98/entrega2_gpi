@@ -10,12 +10,28 @@ import { ErrorInterceptor } from "./error-interceptor";
 import { ErrorComponent } from "./error/error.component";
 import { AngularMaterialModule } from "./angular-material.module";
 import { PostsModule } from "./posts/posts.module";
+import { GfgComponent } from './graphics/graphics.component';
+import { ChartsModule } from 'ng2-charts';
+import { BarChartComponent } from './graphics/charts/bar-chart/bar-chart.component';
+import { ScatterAreaChartComponent } from './graphics/charts/scatter-area-chart/scatter-area-chart.component';
+import { DoughnutChartComponent } from './graphics/charts/doughnut-chart/doughnut-chart.component';
+import { PieChartComponent } from './graphics/charts/pie-chart/pie-chart.component';
+import { BubbleAreaChartComponent } from './graphics/charts/bubble-area-chart/bubble-area-chart.component';
+import { LineChartComponent } from './graphics/charts/line-chart/line-chart.component';
+
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
-    ErrorComponent
+    GfgComponent,
+    ErrorComponent,
+    BarChartComponent,
+    BubbleAreaChartComponent,
+    DoughnutChartComponent,
+    LineChartComponent,
+    PieChartComponent,
+    ScatterAreaChartComponent
   ],
   imports: [
     BrowserModule,
@@ -23,7 +39,8 @@ import { PostsModule } from "./posts/posts.module";
     BrowserAnimationsModule,
     HttpClientModule,
     AngularMaterialModule,
-    PostsModule
+    PostsModule,
+    ChartsModule
   ],
   providers: [
     { provide: HTTP_INTERCEPTORS, useClass: AuthInterceptor, multi: true },
