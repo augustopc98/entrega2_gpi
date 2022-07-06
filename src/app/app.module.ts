@@ -18,6 +18,7 @@ import { DoughnutChartComponent } from './graphics/charts/doughnut-chart/doughnu
 import { PieChartComponent } from './graphics/charts/pie-chart/pie-chart.component';
 import { BubbleAreaChartComponent } from './graphics/charts/bubble-area-chart/bubble-area-chart.component';
 import { LineChartComponent } from './graphics/charts/line-chart/line-chart.component';
+import {MatTableModule} from '@angular/material/table';
 
 
 @NgModule({
@@ -49,4 +50,6 @@ import { LineChartComponent } from './graphics/charts/line-chart/line-chart.comp
   bootstrap: [AppComponent],
   entryComponents: [ErrorComponent]
 })
+
+
 export class AppModule {}
